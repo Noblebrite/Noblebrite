@@ -1,0 +1,171 @@
+Here is the complete GreenHarvest Organics business webpage in a single HTML file:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenHarvest Organics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #388e3c;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #1b5e20;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: white;
+        }
+        h2 {
+            color: #2e7d32;
+        }
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #388e3c;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #1b5e20;
+        }
+        .team img {
+            width: 100px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GreenHarvest Organics</h1>
+    <p>Fresh, Organic, and Sustainable Agriculture</p>
+</header>
+
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#mission">Mission & Vision</a>
+    <a href="#products">Products</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#team">Our Team</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <section id="about">
+        <h2>About Us</h2>
+        <p>GreenHarvest Organics is dedicated to providing fresh, organic, and sustainably grown produce. We use innovative greenhouse farming methods to ensure year-round availability of high-quality vegetables.</p>
+    </section>
+
+    <section id="mission">
+        <h2>Mission & Vision</h2>
+        <p><strong>Mission:</strong> To revolutionize organic farming through sustainable greenhouse practices.</p>
+        <p><strong>Vision:</strong> A world where fresh, healthy, and organic food is accessible to everyone.</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <ul>
+            <li>Organic Beets</li>
+            <li>Fresh Carrots</li>
+            <li>Bell Peppers</li>
+            <li>Nutritious Spinach</li>
+        </ul>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Fresh Vegetable Delivery</li>
+            <li>Greenhouse Consultation</li>
+            <li>Customized Farming Solutions</li>
+        </ul>
+    </section>
+
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <p>Contact us for pricing details on our products and services.</p>
+        <a href="#contact" class="btn">Get a Quote</a>
+    </section>
+
+    <section id="team">
+        <h2>Meet Our Team</h2>
+        <div class="team">
+            <img src="team-member.jpg" alt="Team Member">
+            <p>John Doe - Founder & CEO</p>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <blockquote>"GreenHarvest Organics provides the freshest produce I've ever had!"</blockquote>
+    </section>
+
+    <section id="blog">
+        <h2>Latest News & Updates</h2>
+        <p>Coming soon...</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@greenharvest.com</p>
+        <p>Phone: +234 123 456 7890</p>
+        <p>Follow us on social media:</p>
+        <a href="#" class="btn">Facebook</a>
+        <a href="#" class="btn">Instagram</a>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 GreenHarvest Organics. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
+Features:
+
+✔ Minimalist & modern design with a green theme
+✔ Navigation bar for easy access to sections
+✔ Dedicated sections for About Us, Mission, Vision, Products, Services, Pricing, Team, Testimonials, Blog, and Contact Info
+✔ Call-to-action buttons for customer engagement
+
+You can save this as a .html file and open it in any browser. Let me know if you need any modifications!
