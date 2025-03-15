@@ -1,0 +1,265 @@
+GreenHarvest Organics - HTML, CSS, JavaScript E-Commerce Code
+
+Below is the basic website code with a product catalog and cart functionality. You can host this on a server or use GitHub Pages.
+
+
+---
+
+1. Folder Structure
+
+/GreenHarvest
+ ├── index.html
+ ├── products.html
+ ├── contact.html
+ ├── style.css
+ ├── script.js
+ ├── images/ (store images here)
+
+
+---
+
+2. HTML Files
+
+index.html (Homepage)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenHarvest Organics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>GreenHarvest Organics</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="#" id="cart-link">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Fresh, Organic & Sustainable</h2>
+        <p>Providing high-quality, organic produce all year round.</p>
+    </section>
+
+    <section class="cta">
+        <a href="products.html" class="btn">Shop Now</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 GreenHarvest Organics</p>
+    </footer>
+</body>
+</html>
+
+
+---
+
+products.html (Product Catalog)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - GreenHarvest Organics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>GreenHarvest Organics</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="#" id="cart-link">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <section class="product-list">
+        <div class="product">
+            <img src="images/tomatoes.jpg" alt="Organic Tomatoes">
+            <h2>Organic Tomatoes</h2>
+            <p>$3.99 / lb</p>
+            <button onclick="addToCart('Organic Tomatoes', 3.99)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="images/lettuce.jpg" alt="Fresh Lettuce">
+            <h2>Fresh Lettuce</h2>
+            <p>$2.50 each</p>
+            <button onclick="addToCart('Fresh Lettuce', 2.50)">Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 GreenHarvest Organics</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+---
+
+contact.html (Contact Page)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GreenHarvest Organics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>GreenHarvest Organics</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="#" id="cart-link">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <section class="contact-info">
+        <h2>Contact Us</h2>
+        <p>Email: info@greenharvest.com</p>
+        <p>Follow us on social media:</p>
+        <p><a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 GreenHarvest Organics</p>
+    </footer>
+</body>
+</html>
+
+
+---
+
+3. CSS (style.css)
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8f5e9;
+}
+
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: url('images/farm.jpg') no-repeat center/cover;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #388e3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.product img {
+    width: 150px;
+    height: auto;
+}
+
+button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+---
+
+4. JavaScript (script.js)
+
+let cart = [];
+
+function addToCart(product, price) {
+    cart.push({ product, price });
+    updateCartCount();
+}
+
+function updateCartCount() {
+    document.getElementById("cart-count").innerText = cart.length;
+}
+
+
+---
+
+5. Hosting the Website
+
+Local Testing: Open index.html in a browser.
+
+GitHub Pages:
+
+1. Upload files to a GitHub repository.
+
+
+2. Go to Settings > Pages and enable GitHub Pages.
+
+
+
+Netlify/Vercel: Drag and drop files into Netlify for free hosting.
+
+
+
+---
+
+Next Steps
+
+✅ Replace images in the /images folder.
+✅ Expand products in products.html.
+✅ Integrate Checkout System (e.g., Stripe/PayPal API).
+
+Let me know if you need help setting up payments or hosting!
+
